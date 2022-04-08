@@ -1,0 +1,44 @@
+.backgrounds {
+  align-items: flex-start;
+  display: flex;
+  height: 976px;
+  left: 0;
+  min-width: 1440px;
+  position: absolute;
+  top: 48px;
+}
+
+.menu-bg {
+  background-color: var(--ffffff);
+  height: 976px;
+  width: 228px;
+}
+
+.general-bg {
+  background-color: var(--alto);
+  height: 976px;
+  width: 1212px;
+}
+
+.backgrounds.backgrounds-1 {
+  top: 0;
+}
+
+.backgrounds.backgrounds-1 .menu-bg {
+  background-color: var(--alto);
+}
+
+.backgrounds.backgrounds-1 .general-bg {
+  background-color: var(--ffffff);
+}
+
+.backgrounds.backgrounds-2,
+.backgrounds.backgrounds-3,
+.backgrounds.backgrounds-4,
+.backgrounds.backgrounds-5 {
+  height: unset;
+  left: unset;
+  position: unset;
+  top: unset;
+}
+

@@ -1,0 +1,22 @@
+.button-newuser {
+  align-items: flex-start;
+  background-color: var(--ff008e);
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  height: 51px;
+  justify-content: flex-end;
+  margin-left: 41.0px;
+  margin-top: 21px;
+  min-width: 189px;
+  padding: 10.3px 11.8px;
+}
+
+.create-user {
+  color: var(--ffffff);
+  font-weight: 700;
+  min-height: 20px;
+  text-align: center;
+  width: 162px;
+}
+

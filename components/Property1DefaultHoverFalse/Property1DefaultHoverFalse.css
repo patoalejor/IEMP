@@ -1,0 +1,35 @@
+.button-login {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--ff008e);
+  border-radius: 25px;
+  display: flex;
+  height: 43px;
+  justify-content: flex-end;
+  margin-left: 49px;
+  min-width: 160px;
+  padding: 8.7px 37.3px;
+}
+
+.log-in-1 {
+  color: var(--ffffff);
+  font-weight: 700;
+  min-height: 17px;
+  width: 80px;
+}
+
+.button-login.button-login-1 {
+  align-self: unset;
+  cursor: pointer;
+  height: 44px;
+  margin-left: unset;
+  margin-right: 7.0px;
+  margin-top: 41px;
+  min-width: 164px;
+  padding: 8.9px 38.2px;
+}
+
+.button-login.button-login-1 .log-in-1 {
+  width: 82px;
+}
+

@@ -1,0 +1,372 @@
+.ai-ess {
+  align-items: flex-start;
+  background-color: var(--ffffff);
+  display: flex;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.overlap-group3 {
+  height: 1024px;
+  position: relative;
+  width: 1454px;
+}
+
+.overlap-group1 {
+  height: 1024px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.data-visualization {
+  color: var(--x000000);
+  font-weight: 700;
+  height: 23px;
+  left: 10px;
+  position: absolute;
+  top: 219px;
+  width: 171px;
+}
+
+.ai-services {
+  color: var(--x000000);
+  font-weight: 700;
+  height: 23px;
+  left: 11px;
+  position: absolute;
+  top: 99px;
+  width: 104px;
+}
+
+.ai-services-1 {
+  color: var(--ffffff);
+  font-weight: 700;
+  height: 23px;
+  left: 758px;
+  position: absolute;
+  top: 11px;
+  width: 104px;
+}
+
+.system {
+  color: var(--x000000);
+  font-weight: 300;
+  height: 23px;
+  left: 26px;
+  position: absolute;
+  top: 260px;
+  width: 66px;
+}
+
+.ess-schedule {
+  color: var(--x612897);
+  font-weight: 700;
+  height: 23px;
+  left: 27px;
+  position: absolute;
+  top: 139px;
+  width: 128px;
+}
+
+.rack {
+  color: var(--x000000);
+  font-weight: 300;
+  height: 23px;
+  left: 27px;
+  position: absolute;
+  top: 291px;
+  width: 44px;
+}
+
+.anomaly-detection {
+  color: var(--x000000);
+  font-weight: 300;
+  height: 23px;
+  left: 28px;
+  position: absolute;
+  top: 171px;
+  width: 173px;
+}
+
+.overlap-group {
+  align-items: center;
+  background-color: var(--x0c1e7f);
+  display: flex;
+  height: 49px;
+  left: 0;
+  min-width: 1440px;
+  padding: 9.0px 48px;
+  position: absolute;
+  top: 0;
+}
+
+.iemp {
+  color: var(--ffffff);
+  font-weight: 700;
+  min-height: 23px;
+  width: 49px;
+}
+
+.icon-notifications {
+  align-self: flex-start;
+  height: 30px;
+  margin-left: 1164px;
+  width: 24px;
+}
+
+.logout {
+  color: var(--ffffff);
+  font-weight: 700;
+  margin-left: 31px;
+  min-height: 23px;
+  width: 68px;
+}
+
+.ess-scheduling {
+  color: var(--x000000);
+  font-weight: 700;
+  height: 44px;
+  left: 679px;
+  position: absolute;
+  top: 83px;
+}
+
+.peak-power-threshold {
+  color: var(--x000000);
+  font-weight: 700;
+  height: 29px;
+  left: 354px;
+  position: absolute;
+  top: 235px;
+}
+
+.number {
+  color: var(--ff008e);
+  font-weight: 700;
+  height: 29px;
+  left: 674px;
+  position: absolute;
+  top: 236px;
+}
+
+.historical-load {
+  color: var(--x000000);
+  font-weight: 400;
+  height: 22px;
+  left: 27px;
+  position: absolute;
+  top: 340px;
+}
+
+.dashboard-image {
+  align-items: flex-end;
+  background-color: var(--ffffff);
+  border-radius: 25px;
+  box-shadow: -10px 8px 8px #00000040;
+  display: flex;
+  height: 325px;
+  left: 833px;
+  min-width: 568px;
+  padding: 17px 14px;
+  position: absolute;
+  top: 307px;
+}
+
+.dashboard-image-1 {
+  background-color: var(--ffffff);
+  border-radius: 25px;
+  box-shadow: -10px 8px 8px #00000040;
+  height: 325px;
+  left: 244px;
+  position: absolute;
+  top: 307px;
+  width: 568px;
+}
+
+.power-load-c {
+  height: 40px;
+  left: 927px;
+  position: absolute;
+  top: 342px;
+  width: 202px;
+}
+
+.checkbox-selected-disabled-custom {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 51px;
+}
+
+.state-of-charge {
+  color: var(--x000000);
+  font-weight: 400;
+  height: 22px;
+  left: 51px;
+  position: absolute;
+  top: 8px;
+  width: 149px;
+}
+
+.overlap-group2 {
+  height: 40px;
+  left: 1136px;
+  position: absolute;
+  top: 342px;
+  width: 222px;
+}
+
+.checkbox-selected-disabled-custom-1 {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 63px;
+}
+
+.ess-scheduling-1 {
+  color: var(--x000000);
+  font-weight: 400;
+  height: 22px;
+  left: 54px;
+  position: absolute;
+  top: 7px;
+  width: 168px;
+}
+
+.power-load-c-1 {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  left: 333px;
+  min-width: 202px;
+  position: absolute;
+  top: 333px;
+}
+
+.checkbox-selected-disabled-custom-2 {
+  height: 40px;
+  width: 54px;
+}
+
+.power-load {
+  color: var(--x000000);
+  font-weight: 400;
+  height: 22px;
+  margin-bottom: 2.0px;
+  width: 146px;
+}
+
+.power-load-c-2 {
+  height: 40px;
+  left: 532px;
+  position: absolute;
+  top: 334px;
+  width: 202px;
+}
+
+.checkbox-selected-disabled-custom-3 {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 45px;
+}
+
+.predicted-load {
+  color: var(--x000000);
+  font-weight: 400;
+  height: 22px;
+  left: 45px;
+  position: absolute;
+  top: 8px;
+  width: 155px;
+}
+
+.cost-off-peak-mid-peak-on-peak {
+  color: var(--x000000);
+  font-weight: 700;
+  height: 36px;
+  left: 926px;
+  position: absolute;
+  top: 237px;
+  width: 439px;
+}
+
+.x325-krwk-wh {
+  color: var(--d22779);
+  font-weight: 700;
+  height: 32px;
+  left: 1015px;
+  position: absolute;
+  text-align: center;
+  top: 267px;
+}
+
+.span1 {
+  letter-spacing: 0;
+}
+
+.x515-krwk-wh {
+  color: var(--d22779);
+  font-weight: 700;
+  height: 32px;
+  left: 1141px;
+  position: absolute;
+  text-align: center;
+  top: 267px;
+}
+
+.x765-krwk-wh {
+  color: var(--d22779);
+  font-weight: 700;
+  height: 32px;
+  left: 1262px;
+  position: absolute;
+  text-align: center;
+  top: 267px;
+}
+
+.checkbox-selected-disabled-custom-2 .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::before, .checkbox-selected-disabled-custom-2 .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::after {
+  background-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::before, .checkbox-selected-disabled-custom .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::after {
+  background-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom-2 .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .checkbox-selected-disabled-custom-2 .mdc-checkbox--selected .mdc-checkbox__native-control~.mdc-checkbox__background, .checkbox-selected-disabled-custom-2 .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control~.mdc-checkbox__background {
+  background-color: #6200ee !important;
+  border-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom-1 .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .checkbox-selected-disabled-custom-1 .mdc-checkbox--selected .mdc-checkbox__native-control~.mdc-checkbox__background, .checkbox-selected-disabled-custom-1 .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control~.mdc-checkbox__background {
+  background-color: #6200ee !important;
+  border-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .checkbox-selected-disabled-custom .mdc-checkbox--selected .mdc-checkbox__native-control~.mdc-checkbox__background, .checkbox-selected-disabled-custom .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control~.mdc-checkbox__background {
+  background-color: #6200ee !important;
+  border-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom-3 .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .checkbox-selected-disabled-custom-3 .mdc-checkbox--selected .mdc-checkbox__native-control~.mdc-checkbox__background, .checkbox-selected-disabled-custom-3 .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control~.mdc-checkbox__background {
+  background-color: #6200ee !important;
+  border-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom-3 .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::before, .checkbox-selected-disabled-custom-3 .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::after {
+  background-color: #6200ee !important;
+}
+
+.checkbox-selected-disabled-custom-1 .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::before, .checkbox-selected-disabled-custom-1 .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::after {
+  background-color: #6200ee !important;
+}
+
+.mdc-checkbox {
+  box-sizing: content-box;
+}
+

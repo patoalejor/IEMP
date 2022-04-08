@@ -1,0 +1,53 @@
+.login {
+  align-items: flex-start;
+  background-color: var(--ffffff);
+  display: flex;
+  height: 1024px;
+  padding: 0 511px;
+  width: 1440px;
+}
+
+.overlap-group-3 {
+  align-items: center;
+  background-color: var(--ffffff);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 9px;
+  margin-top: 294px;
+  min-height: 436px;
+  padding: 48px 75px;
+  position: relative;
+  width: 409px;
+}
+
+.text-field-outlined {
+  height: 56px;
+  margin-right: 1.0px;
+  width: 200px;
+}
+
+.text-field-outlined-1 {
+  height: 56px;
+  margin-right: 3.0px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.forget-password-new-user {
+  align-self: flex-start;
+  color: var(--x0c1e7f);
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 54px;
+  min-height: 22px;
+}
+
+.text-field-outlined-1 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
+.text-field-outlined .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+

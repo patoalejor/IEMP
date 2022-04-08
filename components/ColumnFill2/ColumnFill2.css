@@ -1,0 +1,12 @@
+.column-fill-4 {
+  align-items: flex-start;
+  background-color: var(--granite-gray);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -3px;
+  margin-left: 1px;
+  min-height: 286px;
+  position: relative;
+  width: 174px;
+}
+

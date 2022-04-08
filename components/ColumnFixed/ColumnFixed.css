@@ -1,0 +1,13 @@
+.column-fixed {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 286px;
+  position: relative;
+  width: 48px;
+}
+
+.column-fixed.column-fixed-1 {
+  margin-bottom: -3px;
+}
+
