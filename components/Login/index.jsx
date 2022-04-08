@@ -1,22 +1,22 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Property1DefaultHoverFalse from "../Property1DefaultHoverFalse";
+import Property1DefaultHoverFalse3 from "../Property1DefaultHoverFalse3";
 import * as mdc from "material-components-web";
 import "./Login.css";
 
 function Login(props) {
-  const { forgetPasswordNewUser, property1DefaultHoverFalseProps } = props;
+  const { forgetPasswordNewUser, property1DefaultHoverFalse3Props } = props;
 
   useEffect(() => {
-    new mdc.textField.MDCTextField(document.querySelector(".text-field-outlined .mdc-text-field"));
-    new mdc.textField.MDCTextField(document.querySelector(".text-field-outlined-1 .mdc-text-field"));
+    new mdc.textField.MDCTextField(document.querySelector(".input_user_id .mdc-text-field"));
+    new mdc.textField.MDCTextField(document.querySelector(".input_user_pw .mdc-text-field"));
   }, []);
 
   return (
     <div className="container-center-horizontal">
       <div className="login screen">
-        <div className="overlap-group-3 border-2px-x000000">
-          <div className="text-field-outlined">
+        <div className="overlap-group-2 border-2px-x000000">
+          <div className="input_user_id">
             <label className="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ">
               <span className="mdc-notched-outline">
                 <span className="mdc-notched-outline__leading"></span>
@@ -37,7 +37,7 @@ function Login(props) {
               <input type="text" className="mdc-text-field__input" aria-labelledby="my-label-id" />
             </label>
           </div>
-          <div className="text-field-outlined-1">
+          <div className="input_user_pw">
             <label className="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ">
               <span className="mdc-notched-outline">
                 <span className="mdc-notched-outline__leading"></span>
@@ -58,7 +58,9 @@ function Login(props) {
               <input type="text" className="mdc-text-field__input" aria-labelledby="my-label-id" />
             </label>
           </div>
-          <Property1DefaultHoverFalse className={property1DefaultHoverFalseProps.className} />
+          <Property1DefaultHoverFalse3 className={property1DefaultHoverFalse3Props.className}>
+            {property1DefaultHoverFalse3Props.children}
+          </Property1DefaultHoverFalse3>
           <Link to="/newuser" className="align-self-flex-start">
             <div className="forget-password-new-user x18pt---thin---monserrat">{forgetPasswordNewUser}</div>
           </Link>

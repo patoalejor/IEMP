@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./Property1DefaultHoverFalse.css";
 
 function Property1DefaultHoverFalse(props) {
-  const { className } = props;
+  const { children } = props;
 
   return (
-    <div className={`button-login ${className || ""}`}>
-      <div className="log-in-1 x24pt---bold---monserrat">Log in</div>
-    </div>
+    <Link to="/dashboard">
+      <div className="button-newuser">
+        <div className="create-user x24pt---bold---monserrat">{children}</div>
+      </div>
+    </Link>
   );
 }
 

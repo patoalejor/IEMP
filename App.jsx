@@ -1,49 +1,50 @@
 import "./App.css";
 import React from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import AIESS from "./components/AIESS";
-import Home from "./components/Home";
-import Dashboard from "./components/Dashboard";
-import Login from "./components/Login";
 import NewUser from "./components/NewUser";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
 import AIAD from "./components/AIAD";
-import DMRack from "./components/DMRack";
-import DMLoad from "./components/DMLoad";
-import DMSystem from "./components/DMSystem";
+import AIESS from "./components/AIESS";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/ai-ess">
-          <AIESS {...aIESSData} />
+        <Route path="/newuser">
+          <NewUser property1DefaultHoverFalseProps={newUserData.property1DefaultHoverFalseProps} />
         </Route>
         <Route path="/:path(|home)">
-          <Home {...homeData} />
-        </Route>
-        <Route path="/dashboard">
-          <Dashboard {...dashboardData} />
+          <Home
+            iemp="IEMP"
+            hero_Headline={
+              <>
+                Intelligent Energy
+                <br />
+                Management Platform
+              </>
+            }
+            hero_Text="AI-based energy storage system (ESS) charging/discharging scheduling and anomaly detection (AD) for efficient and economical Power Plant operation"
+            property1DefaultProps={homeData.property1DefaultProps}
+            property1DefaultHoverFalse2Props={homeData.property1DefaultHoverFalse2Props}
+            property1DefaultHoverFalse3Props={homeData.property1DefaultHoverFalse3Props}
+          />
         </Route>
         <Route path="/login">
           <Login
             forgetPasswordNewUser="Forget Password / New User"
-            property1DefaultHoverFalseProps={loginData.property1DefaultHoverFalseProps}
+            property1DefaultHoverFalse3Props={loginData.property1DefaultHoverFalse3Props}
           />
         </Route>
-        <Route path="/newuser">
-          <NewUser property1DefaultHoverFalse2Props={newUserData.property1DefaultHoverFalse2Props} />
+        <Route path="/dashboard">
+          <Dashboard {...dashboardData} />
         </Route>
         <Route path="/ai-ad">
           <AIAD {...aIADData} />
         </Route>
-        <Route path="/dm-rack">
-          <DMRack {...dMRackData} />
-        </Route>
-        <Route path="/dm-load">
-          <DMLoad {...dMLoadData} />
-        </Route>
-        <Route path="/dm-system">
-          <DMSystem {...dMSystemData} />
+        <Route path="/ai-ess">
+          <AIESS {...aIESSData} />
         </Route>
       </Switch>
     </Router>
@@ -51,6 +52,86 @@ function App() {
 }
 
 export default App;
+const property1DefaultHoverFalseData = {
+    children: "Create User",
+};
+
+const newUserData = {
+    property1DefaultHoverFalseProps: property1DefaultHoverFalseData,
+};
+
+const property1DefaultData = {
+    children: "Sign Up",
+};
+
+const property1DefaultHoverFalse2Data = {
+    children: "Log in",
+};
+
+const property1DefaultHoverFalse31Data = {
+    children: "Log in",
+};
+
+const homeData = {
+    property1DefaultProps: property1DefaultData,
+    property1DefaultHoverFalse2Props: property1DefaultHoverFalse2Data,
+    property1DefaultHoverFalse3Props: property1DefaultHoverFalse31Data,
+};
+
+const property1DefaultHoverFalse32Data = {
+    children: "Log in",
+    className: "button-login-2",
+};
+
+const loginData = {
+    property1DefaultHoverFalse3Props: property1DefaultHoverFalse32Data,
+};
+
+const backgrounds1Data = {
+    children: "Dashboard",
+};
+
+const property1DefaultHoverFalse33Data = {
+    children: "ESS Scheduling",
+    className: "button_ad",
+};
+
+const property1DefaultHoverFalse34Data = {
+    children: "Anormaly Detection",
+    className: "button_ess",
+};
+
+const dashboardData = {
+    dashboard: "Dashboard",
+    aiServices: "AI Services",
+    essSchedule: "ESS Schedule",
+    anomalyDetection1: "Anomaly Detection",
+    dataManagement: "Data Management",
+    system: "System",
+    load: "Load",
+    rack: "Rack",
+    clock: "6:52PM     4/06/2022",
+    logo_Text: "IEMP",
+    logout: "Logout",
+    title1: "Power Load by ESS-Scheduling",
+    label1: "Cost with AI-based ESS-S",
+    cost_Text1: "3.25   KRW/kWh",
+    label2: "Cost without ESS-S",
+    cost_Text2: "5.15   KRW/kWh",
+    title2: "ESS-Scheduling Cost Reduction Rate",
+    ratio_Text: "75  %",
+    anomalyDetection2: "Anomaly Detection",
+    address: "2 alarms in the last 24 hours",
+    lastAbnormalState: "Last Abnormal State registered on  Bank 1 Rack 1 at 4:00 am",
+    backgroundsProps: backgrounds1Data,
+    property1DefaultHoverFalse31Props: property1DefaultHoverFalse33Data,
+    property1DefaultHoverFalse32Props: property1DefaultHoverFalse34Data,
+};
+
+const backgrounds2Data = {
+    children: "Anomaly Detection",
+};
+
 const sortIconNone1Data = {
     children: "#",
 };
@@ -90,37 +171,37 @@ const columnFixed1Data = {
 };
 
 const sortIconNone2Data = {
-    children: "Power Load",
-    className: "table__cell-header-4",
+    children: "Time",
+    className: "table__cell-header-3",
 };
 
 const textAlignmentLeft7Data = {
-    children: "234",
+    children: "1:30",
     className: "table__cell-1-1",
 };
 
 const textAlignmentLeft8Data = {
-    children: "234",
+    children: "2:00",
     className: "table__cell-1-2",
 };
 
 const textAlignmentLeft9Data = {
-    children: "234",
+    children: "2:30",
     className: "table__cell-1-3",
 };
 
 const textAlignmentLeft10Data = {
-    children: "234",
+    children: "3:00",
     className: "table__cell-1-4",
 };
 
 const textAlignmentLeft11Data = {
-    children: "234",
+    children: "3:30",
     className: "table__cell-1-5",
 };
 
 const textAlignmentLeft12Data = {
-    children: "234",
+    children: "4:00",
     className: "table__cell-1",
 };
 
@@ -135,37 +216,37 @@ const columnFixed21Data = {
 };
 
 const sortIconNone3Data = {
-    children: "Predicted Load",
-    className: "table__cell-header-7",
+    children: "State",
+    className: "table__cell-header-8",
 };
 
 const textAlignmentLeft13Data = {
-    children: "123",
+    children: "Normal",
     className: "table__cell-2-1",
 };
 
 const textAlignmentLeft14Data = {
-    children: "123",
+    children: "Normal",
     className: "table__cell-2-2",
 };
 
 const textAlignmentLeft15Data = {
-    children: "123",
+    children: "Normal",
     className: "table__cell-2-3",
 };
 
 const textAlignmentLeft16Data = {
-    children: "123",
+    children: "Abnormal",
     className: "table__cell-2-4",
 };
 
 const textAlignmentLeft17Data = {
-    children: "123",
+    children: "Normal",
     className: "table__cell-2-5",
 };
 
 const textAlignmentLeft18Data = {
-    children: "123",
+    children: "Abnormal",
     className: "table__cell-2-6",
 };
 
@@ -180,37 +261,37 @@ const columnFill1Data = {
 };
 
 const sortIconNone4Data = {
-    children: "State of Charge",
-    className: "table__cell-header-8",
+    children: "Bank",
+    className: "table__cell-header-9",
 };
 
 const textAlignmentLeft19Data = {
-    children: "ON",
+    children: "1",
     className: "table__cell-2-7",
 };
 
 const textAlignmentLeft20Data = {
-    children: "OFF",
+    children: "1",
     className: "table__cell-2-8",
 };
 
 const textAlignmentLeft21Data = {
-    children: "OFF",
+    children: "1",
     className: "table__cell-2-9",
 };
 
 const textAlignmentLeft22Data = {
-    children: "OFF",
+    children: "1",
     className: "table__cell-2-10",
 };
 
 const textAlignmentLeft23Data = {
-    children: "ON",
+    children: "1",
     className: "table__cell-2-11",
 };
 
 const textAlignmentLeft24Data = {
-    children: "OFF",
+    children: "1",
     className: "table__cell-2-12",
 };
 
@@ -225,38 +306,38 @@ const columnFill2Data = {
 };
 
 const sortIconNone5Data = {
-    children: "Power Cost",
-    className: "table__cell-header-9",
+    children: "Rack",
+    className: "table__cell-header",
 };
 
 const textAlignmentLeft25Data = {
-    children: "1.0",
+    children: "1",
     className: "table__cell-2-13",
 };
 
 const textAlignmentLeft26Data = {
-    children: "2.0",
+    children: "5",
     className: "table__cell-2-14",
 };
 
 const textAlignmentLeft27Data = {
-    children: "2.0",
+    children: "9",
     className: "table__cell-2-15",
 };
 
 const textAlignmentLeft28Data = {
-    children: "3.0",
+    children: "12",
     className: "table__cell-2-16",
 };
 
 const textAlignmentLeft29Data = {
-    children: "2.0",
+    children: "6",
     className: "table__cell-2-17",
 };
 
 const textAlignmentLeft30Data = {
-    children: "5.0",
-    className: "table__cell-2-18",
+    children: "1",
+    className: "table__cell-2",
 };
 
 const columnFill3Data = {
@@ -270,41 +351,41 @@ const columnFill3Data = {
 };
 
 const sortIconNone6Data = {
-    children: "ESS Scheduling",
-    className: "table__cell-header-10",
+    children: "Temp",
+    className: "table__cell-header-4",
 };
 
 const textAlignmentLeft31Data = {
     children: "0",
-    className: "table__cell-2-19",
+    className: "table__cell-3-1",
 };
 
 const textAlignmentLeft32Data = {
-    children: "1",
-    className: "table__cell-2-20",
+    children: "0",
+    className: "table__cell-3-2",
 };
 
 const textAlignmentLeft33Data = {
-    children: "0?",
-    className: "table__cell-2-21",
+    children: "0",
+    className: "table__cell-3-3",
 };
 
 const textAlignmentLeft34Data = {
     children: "0",
-    className: "table__cell-2-22",
+    className: "table__cell-3-4",
 };
 
 const textAlignmentLeft35Data = {
-    children: "1",
-    className: "table__cell-2-23",
+    children: "0",
+    className: "table__cell-3-5",
 };
 
 const textAlignmentLeft36Data = {
     children: "0",
-    className: "table__cell-2-24",
+    className: "table__cell-3",
 };
 
-const columnFill4Data = {
+const columnFill22Data = {
     sortIconNoneProps: sortIconNone6Data,
     textAlignmentLeft1Props: textAlignmentLeft31Data,
     textAlignmentLeft2Props: textAlignmentLeft32Data,
@@ -314,42 +395,78 @@ const columnFill4Data = {
     textAlignmentLeft6Props: textAlignmentLeft36Data,
 };
 
+const autoLayoutTableData = {
+    sortIconNone1Props: columnFixed1Data,
+    sortIconNone2Props: columnFixed21Data,
+    columnFill1Props: columnFill1Data,
+    columnFill2Props: columnFill2Data,
+    columnFill3Props: columnFill3Data,
+    columnFill3Props2: columnFill22Data,
+};
+
+const graphTemperature2Data = {
+    className: "graph_voltage",
+};
+
+const aIADData = {
+    dashboard: "Dashboard",
+    aiServices: "AI Services",
+    essSchedule: "ESS Schedule",
+    anomalyDetection: "Anomaly Detection",
+    dataManagement: "Data Management",
+    system: "System",
+    load: "Load",
+    rack: "Rack",
+    clock: "6:52PM     4/06/2022",
+    logo_Text: "IEMP",
+    logout: "Logout",
+    summary_Alarm_Text: "2 alarms in the last 24 hours",
+    last_Alarm_Text: "Last Abnormal State registered on  Bank 1 Rack 1 at 4:00 am",
+    date: "Date:",
+    location: "Location:",
+    label: "Bank Selection",
+    rackSelectionLabel: "Rack Selection",
+    temp_Text: "Temp",
+    voltage_Text: "Voltage",
+    backgroundsProps: backgrounds2Data,
+    autoLayoutTableProps: autoLayoutTableData,
+    graphTemperatureProps: graphTemperature2Data,
+};
+
+const backgrounds3Data = {
+    children: "ESS Scheduling",
+};
+
 const sortIconNone7Data = {
-    children: "Timestep",
-    className: "table__cell-header",
+    children: "#",
 };
 
 const textAlignmentLeft37Data = {
-    children: "1:30",
-    className: "table__cell-2-25",
+    children: "1",
 };
 
 const textAlignmentLeft38Data = {
-    children: "2:00",
-    className: "table__cell-2-26",
+    children: "2",
 };
 
 const textAlignmentLeft39Data = {
-    children: "2:30",
-    className: "table__cell-2-27",
+    children: "3",
 };
 
 const textAlignmentLeft40Data = {
-    children: "3:00",
-    className: "table__cell-2-28",
+    children: "4",
 };
 
 const textAlignmentLeft41Data = {
-    children: "3:30",
-    className: "table__cell-2-29",
+    children: "5",
 };
 
 const textAlignmentLeft42Data = {
-    children: "4:00",
-    className: "table__cell-2",
+    children: "6",
 };
 
-const columnFill5Data = {
+const columnFixed3Data = {
+    className: "column-fixed-1",
     sortIconNoneProps: sortIconNone7Data,
     textAlignmentLeft1Props: textAlignmentLeft37Data,
     textAlignmentLeft2Props: textAlignmentLeft38Data,
@@ -359,153 +476,43 @@ const columnFill5Data = {
     textAlignmentLeft6Props: textAlignmentLeft42Data,
 };
 
-const autoLayoutTableData = {
-    columnFixedProps: columnFixed1Data,
-    columnFixed2Props: columnFixed21Data,
-    columnFill1Props: columnFill1Data,
-    columnFill2Props: columnFill2Data,
-    columnFill3Props: columnFill3Data,
-    columnFill4Props: columnFill4Data,
-    columnFill5Props: columnFill5Data,
-};
-
-const aIESSData = {
-    dataVisualization: "Data Visualization",
-    aiServices1: "AI Services",
-    aiServices2: "AI Services",
-    system: "System",
-    essSchedule: "ESS Schedule",
-    rack: "Rack",
-    anomalyDetection: "Anomaly Detection",
-    iemp: "IEMP",
-    logout: "Logout",
-    essScheduling1: "ESS Scheduling",
-    peakPowerThreshold: "Peak Power Threshold",
-    number: "650",
-    historicalLoad: "Historical Load",
-    stateOfCharge: " State of Charge",
-    essScheduling2: "ESS Scheduling",
-    powerLoad: "Power Load",
-    predictedLoad: "Predicted Load",
-    costOffPeakMidPeakOnPeak: "Cost       Off-Peak   -    Mid-Peak  -   On-Peak",
-    spanText1: <>3.25<br /></>,
-    spanText2: "KRW/kWh",
-    spanText3: <>5.15<br /></>,
-    spanText4: "KRW/kWh",
-    spanText5: <>7.65<br /></>,
-    spanText6: "KRW/kWh",
-    autoLayoutTableProps: autoLayoutTableData,
-};
-
-const homeData = {
-    iemp: "IEMP",
-    signUp: "Sign Up",
-    intelligentEnergyManagementPlatform: <>Intelligent Energy<br />Management Platform</>,
-    aiBasedEnergyStor: "AI-based energy storage system (ESS) charging/discharging scheduling and anomaly detection (AD) for efficient and economical Power Plant operation",
-    logIn: "Log in",
-    establishmentOfIem: "Establishment of IEMP for securing innovative technologies and platforms for intelligent energy services",
-    whatIsIemp: "What is IEMP?",
-    iempIsAHybridAi: "IEMP is a hybrid AI structure that combines operational resource data-based derivation and expert knowledge-based method, and is a smart ESS charging/discharging scheduling solution that supports optimal portfolio operation according to considerations such as operation patterns and monetization of distributed resources.",
-    techLifeLifeManagement: "/img/tech-life---life-management@2x.png",
-    techLifeCommunication: "/img/tech-life---communication@2x.png",
-    whatWeDo: "What we do?",
-    weDesignedAnOrigi: <>We designed an original platform system architecture with a 7-layer structure by analyzing the service and system requirements of the IEMP platform: <br /><br />Physical energy resource <br />Data Acquisition and Preservation <br />Distributed Resource Management <br />Data management <br />Decision management <br />Service management <br />User interface</>,
-    benefitsOfUsingIemp: "Benefits of using IEMP",
-    time: "/img/time@2x.png",
-    plan: "/img/plan@2x.png",
-    investment: "/img/investment@2x.png",
-    database: "/img/database@2x.png",
-    anOptimalEnergyCo: "An Optimal energy consumption solution to improve environmental conditions",
-    hybridAiBasedEner: "Hybrid AI-based energy platform (IEMP) specialized in various forms of energy-based data structure processing.",
-    reduceEnergyConsum: "Reduce energy consumption from a long-term perspective, and prevent damage through ESS control.",
-    anEfficientEnergy: "An efficient energy management to enhancing national competitiveness and market development.",
-};
-
-const backgrounds2Data = {
-    className: "backgrounds-1",
-};
-
-const dashboardData = {
-    iemp: "IEMP",
-    logout: "Logout",
-    dataManagement: "Data Management",
-    system: "System",
-    load: "Load",
-    rack: "Rack",
-    aiServices: "AI Services",
-    essSchedule: "ESS Schedule",
-    anomalyDetection1: "Anomaly Detection",
-    essScheduling: "ESS Scheduling",
-    x652Pm4062022: <>6:52PM <br />4/06/2022</>,
-    essSchedulingCostReductionRate: "ESS-Scheduling Cost Reduction Rate",
-    dashboard: "Dashboard",
-    powerLoadByEssScheduling: "Power Load by ESS-Scheduling",
-    costWithAiBasedEssS: "Cost with AI-based ESS-S",
-    costWithoutEssS: "Cost without ESS-S",
-    x325KrwKwh: "3.25   KRW/kWh",
-    x515KrwKwh: "5.15   KRW/kWh",
-    anormalyDetection: "Anormaly Detection",
-    anomalyDetection2: "Anomaly Detection",
-    percent: "75  %",
-    address: "2 alarms in the last 24 hours",
-    lastAbnormalState: "Last Abnormal State registered on  Bank 1 Rack 1 at 4:00 am",
-    backgroundsProps: backgrounds2Data,
-};
-
-const property1DefaultHoverFalse2Data = {
-    className: "button-login-1",
-};
-
-const loginData = {
-    property1DefaultHoverFalseProps: property1DefaultHoverFalse2Data,
-};
-
-const property1DefaultHoverFalse22Data = {
-    children: "Create User",
-};
-
-const newUserData = {
-    property1DefaultHoverFalse2Props: property1DefaultHoverFalse22Data,
-};
-
-const backgrounds3Data = {
-    className: "backgrounds-2",
-};
-
-const generalNav1Data = {
-    backgroundsProps: backgrounds3Data,
-};
-
 const sortIconNone8Data = {
-    children: "#",
+    children: "Power Load",
+    className: "table__cell-header-6",
 };
 
 const textAlignmentLeft43Data = {
-    children: "1",
+    children: "234",
+    className: "table__cell-5-1",
 };
 
 const textAlignmentLeft44Data = {
-    children: "2",
+    children: "234",
+    className: "table__cell-5-2",
 };
 
 const textAlignmentLeft45Data = {
-    children: "3",
+    children: "234",
+    className: "table__cell-5-3",
 };
 
 const textAlignmentLeft46Data = {
-    children: "4",
+    children: "234",
+    className: "table__cell-5-4",
 };
 
 const textAlignmentLeft47Data = {
-    children: "5",
+    children: "234",
+    className: "table__cell-5-5",
 };
 
 const textAlignmentLeft48Data = {
-    children: "6",
+    children: "234",
+    className: "table__cell-5",
 };
 
-const columnFixed3Data = {
-    className: "column-fixed-1",
+const columnFixed22Data = {
+    className: "column-fixed-3",
     sortIconNoneProps: sortIconNone8Data,
     textAlignmentLeft1Props: textAlignmentLeft43Data,
     textAlignmentLeft2Props: textAlignmentLeft44Data,
@@ -516,42 +523,41 @@ const columnFixed3Data = {
 };
 
 const sortIconNone9Data = {
-    children: "Time",
-    className: "table__cell-header-6",
+    children: "Predicted Load",
+    className: "table__cell-header-1-1",
 };
 
 const textAlignmentLeft49Data = {
-    children: "1:30",
-    className: "table__cell-4-1",
+    children: "123",
+    className: "table__cell-7-1",
 };
 
 const textAlignmentLeft50Data = {
-    children: "2:00",
-    className: "table__cell-4-2",
+    children: "123",
+    className: "table__cell-7-2",
 };
 
 const textAlignmentLeft51Data = {
-    children: "2:30",
-    className: "table__cell-4-3",
+    children: "123",
+    className: "table__cell-7-3",
 };
 
 const textAlignmentLeft52Data = {
-    children: "3:00",
-    className: "table__cell-4-4",
+    children: "123",
+    className: "table__cell-7-4",
 };
 
 const textAlignmentLeft53Data = {
-    children: "3:30",
-    className: "table__cell-4-5",
+    children: "123",
+    className: "table__cell-7-5",
 };
 
 const textAlignmentLeft54Data = {
-    children: "4:00",
-    className: "table__cell-4",
+    children: "123",
+    className: "table__cell-7-6",
 };
 
-const columnFixed22Data = {
-    className: "column-fixed-3",
+const columnFill32Data = {
     sortIconNoneProps: sortIconNone9Data,
     textAlignmentLeft1Props: textAlignmentLeft49Data,
     textAlignmentLeft2Props: textAlignmentLeft50Data,
@@ -562,41 +568,41 @@ const columnFixed22Data = {
 };
 
 const sortIconNone10Data = {
-    children: "State",
-    className: "table__cell-header-2-1",
+    children: "State of Charge",
+    className: "table__cell-header-1-2",
 };
 
 const textAlignmentLeft55Data = {
-    children: "Normal",
-    className: "table__cell-6-1",
+    children: "ON",
+    className: "table__cell-7-7",
 };
 
 const textAlignmentLeft56Data = {
-    children: "Normal",
-    className: "table__cell-6-2",
+    children: "OFF",
+    className: "table__cell-7-8",
 };
 
 const textAlignmentLeft57Data = {
-    children: "Normal",
-    className: "table__cell-6-3",
+    children: "OFF",
+    className: "table__cell-7-9",
 };
 
 const textAlignmentLeft58Data = {
-    children: "Abnormal",
-    className: "table__cell-6-4",
+    children: "OFF",
+    className: "table__cell-7-10",
 };
 
 const textAlignmentLeft59Data = {
-    children: "Normal",
-    className: "table__cell-6-5",
+    children: "ON",
+    className: "table__cell-7-11",
 };
 
 const textAlignmentLeft60Data = {
-    children: "Abnormal",
-    className: "table__cell-6-6",
+    children: "OFF",
+    className: "table__cell-7-12",
 };
 
-const columnFill22Data = {
+const columnFill33Data = {
     sortIconNoneProps: sortIconNone10Data,
     textAlignmentLeft1Props: textAlignmentLeft55Data,
     textAlignmentLeft2Props: textAlignmentLeft56Data,
@@ -607,41 +613,41 @@ const columnFill22Data = {
 };
 
 const sortIconNone11Data = {
-    children: "Bank",
-    className: "table__cell-header-2-2",
+    children: "Power Cost",
+    className: "table__cell-header-1-3",
 };
 
 const textAlignmentLeft61Data = {
-    children: "1",
-    className: "table__cell-6-7",
+    children: "1.0",
+    className: "table__cell-7-13",
 };
 
 const textAlignmentLeft62Data = {
-    children: "1",
-    className: "table__cell-6-8",
+    children: "2.0",
+    className: "table__cell-7-14",
 };
 
 const textAlignmentLeft63Data = {
-    children: "1",
-    className: "table__cell-6-9",
+    children: "2.0",
+    className: "table__cell-7-15",
 };
 
 const textAlignmentLeft64Data = {
-    children: "1",
-    className: "table__cell-6-10",
+    children: "3.0",
+    className: "table__cell-7-16",
 };
 
 const textAlignmentLeft65Data = {
-    children: "1",
-    className: "table__cell-6-11",
+    children: "2.0",
+    className: "table__cell-7-17",
 };
 
 const textAlignmentLeft66Data = {
-    children: "1",
-    className: "table__cell-6-12",
+    children: "5.0",
+    className: "table__cell-7-18",
 };
 
-const columnFill23Data = {
+const columnFill34Data = {
     sortIconNoneProps: sortIconNone11Data,
     textAlignmentLeft1Props: textAlignmentLeft61Data,
     textAlignmentLeft2Props: textAlignmentLeft62Data,
@@ -652,41 +658,41 @@ const columnFill23Data = {
 };
 
 const sortIconNone12Data = {
-    children: "Rack",
-    className: "table__cell-header-2",
+    children: "ESS Scheduling",
+    className: "table__cell-header-1",
 };
 
 const textAlignmentLeft67Data = {
-    children: "1",
-    className: "table__cell-6-13",
+    children: "0",
+    className: "table__cell-7-19",
 };
 
 const textAlignmentLeft68Data = {
-    children: "5",
-    className: "table__cell-6-14",
+    children: "1",
+    className: "table__cell-7-20",
 };
 
 const textAlignmentLeft69Data = {
-    children: "9",
-    className: "table__cell-6-15",
+    children: "0?",
+    className: "table__cell-7-21",
 };
 
 const textAlignmentLeft70Data = {
-    children: "12",
-    className: "table__cell-6-16",
+    children: "0",
+    className: "table__cell-7-22",
 };
 
 const textAlignmentLeft71Data = {
-    children: "6",
-    className: "table__cell-6-17",
+    children: "1",
+    className: "table__cell-7-23",
 };
 
 const textAlignmentLeft72Data = {
-    children: "1",
-    className: "table__cell-6",
+    children: "0",
+    className: "table__cell-7",
 };
 
-const columnFill24Data = {
+const columnFill35Data = {
     sortIconNoneProps: sortIconNone12Data,
     textAlignmentLeft1Props: textAlignmentLeft67Data,
     textAlignmentLeft2Props: textAlignmentLeft68Data,
@@ -697,42 +703,42 @@ const columnFill24Data = {
 };
 
 const sortIconNone13Data = {
-    children: "Temp",
-    className: "table__cell-header-1-1",
+    children: "Timestep",
+    className: "table__cell-header-7",
 };
 
 const textAlignmentLeft73Data = {
-    children: "0",
-    className: "table__cell-5-1",
+    children: "1:30",
+    className: "table__cell-6-1",
 };
 
 const textAlignmentLeft74Data = {
-    children: "0",
-    className: "table__cell-5-2",
+    children: "2:00",
+    className: "table__cell-6-2",
 };
 
 const textAlignmentLeft75Data = {
-    children: "0",
-    className: "table__cell-5-3",
+    children: "2:30",
+    className: "table__cell-6-3",
 };
 
 const textAlignmentLeft76Data = {
-    children: "0",
-    className: "table__cell-5-4",
+    children: "3:00",
+    className: "table__cell-6-4",
 };
 
 const textAlignmentLeft77Data = {
-    children: "0",
-    className: "table__cell-5-5",
+    children: "3:30",
+    className: "table__cell-6-5",
 };
 
 const textAlignmentLeft78Data = {
-    children: "0",
-    className: "table__cell-5-6",
+    children: "4:00",
+    className: "table__cell-6",
 };
 
-const columnFill6Data = {
-    className: "column-fill-1",
+const columnFill23Data = {
+    className: "column-fill-2",
     sortIconNoneProps: sortIconNone13Data,
     textAlignmentLeft1Props: textAlignmentLeft73Data,
     textAlignmentLeft2Props: textAlignmentLeft74Data,
@@ -745,191 +751,39 @@ const columnFill6Data = {
 const autoLayoutTable2Data = {
     columnFixedProps: columnFixed3Data,
     columnFixed2Props: columnFixed22Data,
-    columnFill21Props: columnFill22Data,
-    columnFill22Props: columnFill23Data,
-    columnFill23Props: columnFill24Data,
-    columnFillProps: columnFill6Data,
+    columnFill31Props: columnFill32Data,
+    columnFill32Props: columnFill33Data,
+    columnFill33Props: columnFill34Data,
+    columnFill34Props: columnFill35Data,
+    columnFill2Props: columnFill23Data,
 };
 
-const sortIconNone14Data = {
-    children: "Voltage",
-    className: "table__cell-header-1",
-};
-
-const textAlignmentLeft79Data = {
-    children: "0",
-    className: "table__cell-5-7",
-};
-
-const textAlignmentLeft80Data = {
-    children: "0",
-    className: "table__cell-5-8",
-};
-
-const textAlignmentLeft81Data = {
-    children: "0",
-    className: "table__cell-5-9",
-};
-
-const textAlignmentLeft82Data = {
-    children: "0",
-    className: "table__cell-5-10",
-};
-
-const textAlignmentLeft83Data = {
-    children: "0",
-    className: "table__cell-5-11",
-};
-
-const textAlignmentLeft84Data = {
-    children: "0",
-    className: "table__cell-5",
-};
-
-const columnFill7Data = {
-    className: "column-fill-2",
-    sortIconNoneProps: sortIconNone14Data,
-    textAlignmentLeft1Props: textAlignmentLeft79Data,
-    textAlignmentLeft2Props: textAlignmentLeft80Data,
-    textAlignmentLeft3Props: textAlignmentLeft81Data,
-    textAlignmentLeft4Props: textAlignmentLeft82Data,
-    textAlignmentLeft5Props: textAlignmentLeft83Data,
-    textAlignmentLeft6Props: textAlignmentLeft84Data,
-};
-
-const tinyBarChartShowCartesianGridShowXA2Data = {
-    className: "tiny-bar-chart-show-1",
-};
-
-const aIADData = {
-    anomalyDetection1: "Anomaly Detection",
-    dataVisualization: "Data Visualization",
+const aIESSData = {
+    dashboard: "Dashboard",
     aiServices: "AI Services",
-    system: "System",
     essSchedule: "ESS Schedule",
+    anomalyDetection: "Anomaly Detection",
+    dataManagement: "Data Management",
+    system: "System",
+    load: "Load",
     rack: "Rack",
-    anomalyDetection2: "Anomaly Detection",
-    historicalLoad: "Historical Load",
-    address: "2 alarms in the last 24 hours",
-    lastAbnormalState: "Last Abnormal State registered on  Bank 1 Rack 1 at 4:00 am",
-    date: "Date:",
-    bankSelection: "Bank Selection",
-    rackSelection: "Rack Selection",
-    temp: "Temp",
-    voltage: "Voltage",
-    generalNavProps: generalNav1Data,
+    clock: "6:52PM     4/06/2022",
+    logo_Text: "IEMP",
+    logout: "Logout",
+    cost_Headline: "Cost       Off-Peak   -    Mid-Peak  -   On-Peak",
+    spanText1: <>3.25<br /></>,
+    spanText2: "KRW/kWh",
+    spanText3: <>5.15<br /></>,
+    spanText4: "KRW/kWh",
+    spanText5: <>7.65<br /></>,
+    spanText6: "KRW/kWh",
+    stateOfCharge: " State of Charge",
+    essScheduling: "ESS Scheduling",
+    peak_Headline: "Peak Power Threshold",
+    peak_Value: "650",
+    powerLoad: "Power Load",
+    predictedLoad: "Predicted Load",
+    backgroundsProps: backgrounds3Data,
     autoLayoutTable2Props: autoLayoutTable2Data,
-    columnFillProps: columnFill7Data,
-    tinyBarChartShowCartesianGridShowXAProps: tinyBarChartShowCartesianGridShowXA2Data,
-};
-
-const backgrounds4Data = {
-    className: "backgrounds-3",
-};
-
-const generalNav2Data = {
-    backgroundsProps: backgrounds4Data,
-};
-
-const dMRackData = {
-    cellChargeStatus: "Cell charge status",
-    cell1: "Cell #1",
-    numV1: "num [V]",
-    cell7: "Cell #7",
-    numV2: "num [V]",
-    cell2: "Cell #2",
-    numV3: "num [V]",
-    cell8: "Cell #8",
-    numV4: "num [V]",
-    cell3: "Cell #3",
-    numV5: "num [V]",
-    cell9: "Cell #9",
-    numV6: "num [V]",
-    cell4: "Cell #4",
-    numV7: "num [V]",
-    cell10: "Cell #10",
-    numV8: "num [V]",
-    cell5: "Cell #5",
-    numV9: "num [V]",
-    cell11: "Cell #11",
-    numV10: "num [V]",
-    cell6: "Cell #6",
-    numV11: "num [V]",
-    dataManagementRackParameters: "Data Management Rack Parameters",
-    minV: "min V",
-    name: "max V",
-    from: "From:",
-    to: "To:",
-    tempC: "Temp [C]",
-    dataVisualization: "Data Visualization",
-    aiServices: "AI Services",
-    system: "System",
-    essSchedule: "ESS Schedule",
-    rack: "Rack",
-    anomalyDetection: "Anomaly Detection",
-    historicalLoad: "Historical Load",
-    generalNavProps: generalNav2Data,
-};
-
-const backgrounds5Data = {
-    className: "backgrounds-4",
-};
-
-const generalNav3Data = {
-    backgroundsProps: backgrounds5Data,
-};
-
-const dMLoadData = {
-    energyConsumptionKwh: "Energy Consumption [kWh]",
-    costReductionRate: "Cost Reduction Rate [%]",
-    historyOfUserPowerConsumption: "History Of User Power Consumption",
-    from: "From:",
-    to: "To:",
-    dataVisualization: "Data Visualization",
-    aiServices: "AI Services",
-    system: "System",
-    essSchedule: "ESS Schedule",
-    rack: "Rack",
-    anomalyDetection: "Anomaly Detection",
-    historicalLoad: "Historical Load",
-    generalNavProps: generalNav3Data,
-};
-
-const backgrounds6Data = {
-    className: "backgrounds-5",
-};
-
-const generalNav4Data = {
-    backgroundsProps: backgrounds6Data,
-};
-
-const dMSystemData = {
-    dataManagementSystemParameters: "Data Management System Parameters",
-    energyV: "Energy [V]",
-    essCapacity: "ESS  Capacity",
-    number1: "123",
-    minV1: "min V",
-    name1: "max V",
-    minV2: "min V",
-    name2: "max V",
-    number2: "0",
-    number3: "100",
-    number4: "0",
-    number5: "100",
-    from: "From:",
-    to: "To:",
-    tempC: "Temp [C]",
-    soc: "SoC [%]",
-    soh: "SoH [%]",
-    vol: "Vol",
-    curr: "Curr",
-    dataVisualization: "Data Visualization",
-    aiServices: "AI Services",
-    system: "System",
-    essSchedule: "ESS Schedule",
-    rack: "Rack",
-    anomalyDetection: "Anomaly Detection",
-    historicalLoad: "Historical Load",
-    generalNavProps: generalNav4Data,
 };
 

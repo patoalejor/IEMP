@@ -1,12 +1,12 @@
-.auto-layout-table-1 {
-  align-items: flex-end;
+.auto-layout-table {
+  align-items: center;
   background-color: var(--granite-gray);
   display: flex;
-  height: 284px;
-  left: 315px;
-  min-width: 875px;
+  height: 288px;
+  left: 272px;
+  min-width: 1071px;
   padding: 0 1px;
   position: absolute;
-  top: 706px;
+  top: 684px;
 }
 

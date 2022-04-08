@@ -1,4 +1,4 @@
-.table__cell-header-3 {
+.table__cell-header-2 {
   align-items: center;
   background-color: var(--gallery);
   display: flex;
@@ -7,7 +7,7 @@
   padding: 0 8px;
 }
 
-.text-3 {
+.text-2 {
   height: 24px;
   letter-spacing: 0;
   line-height: 24px;
@@ -15,45 +15,49 @@
   width: 32px;
 }
 
-.table__cell-header-3.table__cell-header-4,
-.table__cell-header-3.table__cell-header-6 {
+.table__cell-header-2.table__cell-header-3,
+.table__cell-header-2.table__cell-header-6 {
   min-width: 144px;
 }
 
-.table__cell-header-3.table__cell-header-4 .text-3,
-.table__cell-header-3.table__cell-header-6 .text-3 {
+.table__cell-header-2.table__cell-header-3 .text-2,
+.table__cell-header-2.table__cell-header-6 .text-2 {
   width: 128px;
 }
 
-.table__cell-header-3.table__cell-header,
-.table__cell-header-3.table__cell-header-10,
-.table__cell-header-3.table__cell-header-7,
-.table__cell-header-3.table__cell-header-8,
-.table__cell-header-3.table__cell-header-9,
-.table__cell-header-3.table__cell-header-1,
-.table__cell-header-3.table__cell-header-1-1 {
+.table__cell-header-2.table__cell-header,
+.table__cell-header-2.table__cell-header-8,
+.table__cell-header-2.table__cell-header-9 {
+  min-width: 234px;
+}
+
+.table__cell-header-2.table__cell-header-8 .text-2,
+.table__cell-header-2.table__cell-header-9 .text-2,
+.table__cell-header-2.table__cell-header .text-2 {
+  width: 218px;
+}
+
+.table__cell-header-2.table__cell-header-4,
+.table__cell-header-2.table__cell-header-7 {
   min-width: 154px;
 }
 
-.table__cell-header-3.table__cell-header-7 .text-3,
-.table__cell-header-3.table__cell-header-1-1 .text-3,
-.table__cell-header-3.table__cell-header-8 .text-3,
-.table__cell-header-3.table__cell-header-9 .text-3,
-.table__cell-header-3.table__cell-header-10 .text-3,
-.table__cell-header-3.table__cell-header .text-3,
-.table__cell-header-3.table__cell-header-1 .text-3 {
+.table__cell-header-2.table__cell-header-4 .text-2,
+.table__cell-header-2.table__cell-header-7 .text-2 {
   width: 138px;
 }
 
-.table__cell-header-3.table__cell-header-2,
-.table__cell-header-3.table__cell-header-2-1,
-.table__cell-header-3.table__cell-header-2-2 {
-  min-width: 174px;
+.table__cell-header-2.table__cell-header-1,
+.table__cell-header-2.table__cell-header-1-1,
+.table__cell-header-2.table__cell-header-1-2,
+.table__cell-header-2.table__cell-header-1-3 {
+  min-width: 179px;
 }
 
-.table__cell-header-3.table__cell-header-2-1 .text-3,
-.table__cell-header-3.table__cell-header-2-2 .text-3,
-.table__cell-header-3.table__cell-header-2 .text-3 {
-  width: 158px;
+.table__cell-header-2.table__cell-header-1-1 .text-2,
+.table__cell-header-2.table__cell-header-1-2 .text-2,
+.table__cell-header-2.table__cell-header-1-3 .text-2,
+.table__cell-header-2.table__cell-header-1 .text-2 {
+  width: 163px;
 }
 

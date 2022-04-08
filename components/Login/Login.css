@@ -7,7 +7,7 @@
   width: 1440px;
 }
 
-.overlap-group-3 {
+.overlap-group-2 {
   align-items: center;
   background-color: var(--ffffff);
   border-radius: 25px;
@@ -21,13 +21,13 @@
   width: 409px;
 }
 
-.text-field-outlined {
+.input_user_id {
   height: 56px;
-  margin-right: 1.0px;
+  margin-right: 3.0px;
   width: 200px;
 }
 
-.text-field-outlined-1 {
+.input_user_pw {
   height: 56px;
   margin-right: 3.0px;
   margin-top: 20px;
@@ -43,11 +43,11 @@
   min-height: 22px;
 }
 
-.text-field-outlined-1 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+.input_user_pw .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: var(--mdc-theme-primary);
 }
 
-.text-field-outlined .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+.input_user_id .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: var(--mdc-theme-primary);
 }
 

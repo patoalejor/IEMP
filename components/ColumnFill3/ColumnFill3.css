@@ -1,0 +1,11 @@
+.column-fill-3 {
+  align-items: flex-start;
+  background-color: var(--granite-gray);
+  display: flex;
+  flex-direction: column;
+  margin-left: 1px;
+  min-height: 286px;
+  position: relative;
+  width: 179px;
+}
+

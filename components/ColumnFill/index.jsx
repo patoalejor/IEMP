@@ -5,7 +5,6 @@ import "./ColumnFill.css";
 
 function ColumnFill(props) {
   const {
-    className,
     sortIconNoneProps,
     textAlignmentLeft1Props,
     textAlignmentLeft2Props,
@@ -16,7 +15,7 @@ function ColumnFill(props) {
   } = props;
 
   return (
-    <div className={`column-fill-3 ${className || ""}`}>
+    <div className="column-fill">
       <SortIconNone className={sortIconNoneProps.className}>{sortIconNoneProps.children}</SortIconNone>
       <TextAlignmentLeft className={textAlignmentLeft1Props.className}>
         {textAlignmentLeft1Props.children}

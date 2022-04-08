@@ -1,0 +1,59 @@
+.button-login-1 {
+  align-items: flex-end;
+  background-color: var(--x0c1e7f);
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  justify-content: flex-end;
+  margin-right: 2.0px;
+  margin-top: 84px;
+  min-width: 164px;
+  padding: 8px 10px;
+}
+
+.log-in-1 {
+  color: var(--ffffff);
+  font-weight: 700;
+  height: 27px;
+  text-align: center;
+  width: 138px;
+}
+
+.button-login-1.button-login-2 {
+  margin-right: 7.0px;
+  margin-top: 41px;
+}
+
+.button-login-1.button_ad {
+  height: 70px;
+  left: 387px;
+  margin-right: unset;
+  margin-top: unset;
+  min-width: 272px;
+  padding: 12.7px 16.6px;
+  position: absolute;
+  top: 716px;
+}
+
+.button-login-1.button_ad .log-in-1 {
+  height: 43px;
+  width: 229px;
+}
+
+.button-login-1.button_ess {
+  height: 76px;
+  left: 387px;
+  margin-right: unset;
+  margin-top: unset;
+  min-width: 272px;
+  padding: 13.8px 16.6px;
+  position: absolute;
+  top: 804px;
+}
+
+.button-login-1.button_ess .log-in-1 {
+  height: 47px;
+  width: 229px;
+}
+

@@ -7,7 +7,7 @@
   width: 1440px;
 }
 
-.overlap-group-4 {
+.overlap-group {
   align-items: center;
   background-color: var(--ffffff);
   border-radius: 25px;
@@ -72,15 +72,15 @@
   color: var(--mdc-theme-primary);
 }
 
+.text-field-outlined .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
 .text-field-outlined-1 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: var(--mdc-theme-primary);
 }
 
 .text-field-outlined-3 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
-  color: var(--mdc-theme-primary);
-}
-
-.text-field-outlined .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: var(--mdc-theme-primary);
 }
 

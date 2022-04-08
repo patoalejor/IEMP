@@ -2,12 +2,13 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-bottom: -3px;
   min-height: 286px;
   position: relative;
   width: 48px;
 }
 
 .column-fixed.column-fixed-1 {
-  margin-bottom: -3px;
+  margin-bottom: unset;
 }
 

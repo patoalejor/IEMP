@@ -1,12 +1,13 @@
-.auto-layout-table {
-  align-items: center;
+.summary-alarm-table {
+  align-items: flex-end;
   background-color: var(--granite-gray);
   display: flex;
-  height: 288px;
-  left: 338px;
-  min-width: 969px;
-  padding: 0 1px;
+  height: 284px;
+  justify-content: flex-end;
+  left: 292px;
+  min-width: 1054px;
+  padding: 0 1.0px;
   position: absolute;
-  top: 674px;
+  top: 722px;
 }
 

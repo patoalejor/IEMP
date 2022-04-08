@@ -1,0 +1,13 @@
+.graph_temperature {
+  height: 67px;
+  left: 70px;
+  position: absolute;
+  top: 152px;
+  width: 416px;
+}
+
+.graph_temperature.graph_voltage {
+  left: 71px;
+  top: 259px;
+}
+

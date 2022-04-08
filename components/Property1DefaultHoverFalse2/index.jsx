@@ -6,9 +6,9 @@ function Property1DefaultHoverFalse2(props) {
   const { children } = props;
 
   return (
-    <Link to="/dashboard">
-      <div className="button-newuser">
-        <div className="create-user x24pt---bold---monserrat">{children}</div>
+    <Link to="/login" className="align-self-flex-end">
+      <div className="button-login">
+        <div className="log-in valign-text-middle">{children}</div>
       </div>
     </Link>
   );

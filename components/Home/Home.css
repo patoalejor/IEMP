@@ -3,27 +3,21 @@
   background-color: var(--ffffff);
   display: flex;
   flex-direction: column;
-  height: 3072px;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
   width: 1440px;
 }
 
-.flex-col {
-  align-items: center;
+.nero_-nav-bar {
+  align-items: flex-start;
   display: flex;
-  flex-direction: column;
-  min-height: 1610px;
-  width: 1440px;
+  margin-left: 2.0px;
+  margin-top: -3px;
+  min-width: 1442px;
 }
 
-.flex-col-1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 1112px;
-  width: 1440px;
-}
-
-.overlap-group1-1 {
+.overlap-group-1 {
   align-items: center;
   background-color: var(--x0c1e7f);
   display: flex;
@@ -33,253 +27,30 @@
   position: relative;
 }
 
-.iemp-1 {
+.iemp {
   color: var(--ffffff);
   font-weight: 700;
+  margin-top: 6.0px;
   min-height: 22px;
   min-width: 49px;
 }
 
-.sign-up {
-  color: var(--ffffff);
-  font-weight: 700;
-  margin-left: 990px;
-  min-height: 22px;
-  min-width: 74px;
-}
-
-.intelligent-energy-management-platform {
-  align-self: flex-start;
+.hero_headline {
   color: var(--x0c1e7f);
   font-weight: 700;
-  margin-left: 227px;
-  margin-top: 204px;
+  margin-right: 53.0px;
+  margin-top: 260px;
   min-height: 141px;
   text-align: center;
   width: 519px;
 }
 
-.ai-based-energy-stor {
+.hero_text {
   color: var(--x000000);
   font-weight: 300;
-  margin-right: 415.0px;
+  margin-right: 1.0px;
   margin-top: 103px;
   min-height: 129px;
   width: 467px;
-}
-
-.group-1 {
-  align-items: flex-start;
-  cursor: pointer;
-  display: flex;
-  margin-right: 436.0px;
-  margin-top: 42px;
-  min-width: 274px;
-}
-
-.overlap-group-1 {
-  align-items: center;
-  background-color: var(--ff008e);
-  border-radius: 25px;
-  display: flex;
-  height: 74px;
-  justify-content: flex-end;
-  min-width: 272px;
-  padding: 0 63.3px;
-}
-
-.log-in {
-  color: var(--ffffff);
-  font-weight: 700;
-  min-height: 44px;
-  width: 136px;
-}
-
-.establishment-of-iem {
-  color: var(--x0c1e7f);
-  font-weight: 400;
-  margin-left: 97.0px;
-  margin-top: 238px;
-  min-height: 133px;
-  text-align: center;
-  width: 953px;
-}
-
-.flex-row {
-  align-items: flex-start;
-  display: flex;
-  height: 332px;
-  margin-right: 19.0px;
-  margin-top: 166px;
-  min-width: 1031px;
-}
-
-.iemp-container {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  min-height: 332px;
-  width: 564px;
-}
-
-.what-is-iemp {
-  color: var(--x000000);
-  font-weight: 700;
-  min-height: 73px;
-  width: 564px;
-}
-
-.iemp-is-a-hybrid-ai {
-  color: var(--x000000);
-  font-weight: 300;
-  margin-top: 26px;
-  min-height: 233px;
-  text-align: justify;
-  width: 564px;
-}
-
-.tech-life-life-management {
-  height: 318px;
-  margin-left: 116px;
-  object-fit: cover;
-  width: 351px;
-}
-
-.flex-row-1 {
-  align-items: flex-start;
-  display: flex;
-  height: 450px;
-  margin-top: 248px;
-  min-width: 1050px;
-}
-
-.tech-life-communication {
-  height: 327px;
-  object-fit: cover;
-  width: 372px;
-}
-
-.we-d-container {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  margin-left: 114px;
-  min-height: 450px;
-  width: 564px;
-}
-
-.what-we-do {
-  color: var(--x000000);
-  font-weight: 700;
-  min-height: 69px;
-  text-align: center;
-  width: 564px;
-}
-
-.we-designed-an-origi {
-  color: var(--x000000);
-  font-weight: 300;
-  margin-top: 26px;
-  min-height: 355px;
-  text-align: justify;
-  width: 564px;
-}
-
-.flex-col-2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 140px;
-  min-height: 479px;
-  width: 1246px;
-}
-
-.benefits-of-using-iemp {
-  color: var(--x0c1e7f);
-  font-weight: 400;
-  margin-left: 78.0px;
-  min-height: 68px;
-  text-align: center;
-  width: 876px;
-}
-
-.flex-row-2 {
-  align-items: flex-start;
-  display: flex;
-  margin-left: 4.0px;
-  margin-top: 37px;
-  min-width: 1104px;
-}
-
-.time {
-  height: 149px;
-  object-fit: cover;
-  width: 149px;
-}
-
-.plan {
-  height: 149px;
-  margin-left: 175px;
-  object-fit: cover;
-  width: 150px;
-}
-
-.investment {
-  height: 149px;
-  margin-left: 178px;
-  object-fit: cover;
-  width: 149px;
-}
-
-.database {
-  height: 149px;
-  margin-left: 153px;
-  object-fit: cover;
-  width: 150px;
-}
-
-.ener-container {
-  align-items: flex-start;
-  display: flex;
-  height: 216px;
-  margin-top: 9px;
-  min-width: 1246px;
-}
-
-.an-optimal-energy-co {
-  color: var(--x000000);
-  font-weight: 300;
-  min-height: 212px;
-  text-align: center;
-  width: 272px;
-}
-
-.hybrid-ai-based-ener {
-  color: var(--x000000);
-  font-weight: 300;
-  margin-left: 47px;
-  min-height: 212px;
-  text-align: center;
-  width: 272px;
-}
-
-.reduce-energy-consum {
-  align-self: flex-end;
-  color: var(--x000000);
-  font-weight: 300;
-  margin-left: 56px;
-  min-height: 212px;
-  text-align: center;
-  width: 272px;
-}
-
-.an-efficient-energy {
-  align-self: flex-end;
-  color: var(--x000000);
-  font-weight: 300;
-  margin-left: 55px;
-  min-height: 212px;
-  text-align: center;
-  width: 272px;
 }
 

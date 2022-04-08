@@ -1,0 +1,16 @@
+.sign-up {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  margin-left: 972px;
+  margin-top: 6.0px;
+  min-width: 74px;
+}
+
+.sign-up-1 {
+  color: var(--ffffff);
+  font-weight: 700;
+  min-height: 22px;
+}
+

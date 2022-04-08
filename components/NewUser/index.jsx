@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import Property1DefaultHoverFalse2 from "../Property1DefaultHoverFalse2";
+import Property1DefaultHoverFalse from "../Property1DefaultHoverFalse";
 import * as mdc from "material-components-web";
 import "./NewUser.css";
 
 function NewUser(props) {
-  const { property1DefaultHoverFalse2Props } = props;
+  const { property1DefaultHoverFalseProps } = props;
 
   useEffect(() => {
     new mdc.textField.MDCTextField(document.querySelector(".text-field-outlined .mdc-text-field"));
@@ -18,7 +18,7 @@ function NewUser(props) {
   return (
     <div className="container-center-horizontal">
       <div className="newuser screen">
-        <div className="overlap-group-4 border-2px-x000000">
+        <div className="overlap-group border-2px-x000000">
           <div className="text-field-outline-container">
             <div className="text-field-outlined">
               <label className="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ">
@@ -149,7 +149,7 @@ function NewUser(props) {
               <input type="text" className="mdc-text-field__input" aria-labelledby="my-label-id" />
             </label>
           </div>
-          <Property1DefaultHoverFalse2>{property1DefaultHoverFalse2Props.children}</Property1DefaultHoverFalse2>
+          <Property1DefaultHoverFalse>{property1DefaultHoverFalseProps.children}</Property1DefaultHoverFalse>
         </div>
       </div>
     </div>

@@ -1,35 +1,22 @@
-.button-login {
+.button-newuser {
   align-items: flex-start;
-  align-self: flex-end;
-  background-color: var(--ff008e);
+  background-color: var(--x0c1e7f);
   border-radius: 25px;
+  cursor: pointer;
   display: flex;
-  height: 43px;
+  height: 51px;
   justify-content: flex-end;
-  margin-left: 49px;
-  min-width: 160px;
-  padding: 8.7px 37.3px;
+  margin-left: 41.0px;
+  margin-top: 21px;
+  min-width: 189px;
+  padding: 10.3px 11.8px;
 }
 
-.log-in-1 {
+.create-user {
   color: var(--ffffff);
   font-weight: 700;
-  min-height: 17px;
-  width: 80px;
-}
-
-.button-login.button-login-1 {
-  align-self: unset;
-  cursor: pointer;
-  height: 44px;
-  margin-left: unset;
-  margin-right: 7.0px;
-  margin-top: 41px;
-  min-width: 164px;
-  padding: 8.9px 38.2px;
-}
-
-.button-login.button-login-1 .log-in-1 {
-  width: 82px;
+  min-height: 20px;
+  text-align: center;
+  width: 162px;
 }
 
